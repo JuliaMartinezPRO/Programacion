@@ -71,7 +71,16 @@ public class ejercico {
         }
         //scanner es una clase para poder usarla hay que usar import //
 */
-       double julia = 0.03; 
-       System.out.println(" resultado "+julia);
+       //EJERCIO 1 BOLETIN 2 
+       //Creamos un objeto Scanner
+    Scanner sc = new Scanner(System.in);
+    //pedir al usuario que introduzca una nota
+    System.out.println("Ingrese una nota");
+    double nota = Scanner.nextDouble();
+    //definir rango
+    if (nota < 0 ||  > 10)
+    System.out.println("es correcto"+nota); 
+    else
+   System.out.println("es incorrecto"+nota);
     }
 }
