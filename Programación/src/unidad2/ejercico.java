@@ -70,7 +70,7 @@ public class ejercico {
             System.out.println("estás aprobado");
         }
         //scanner es una clase para poder usarla hay que usar import //
-*/
+
        //EJERCIO 1 BOLETIN 2 
        //Creamos un objeto Scanner
     Scanner sc = new Scanner(System.in);
@@ -82,5 +82,64 @@ public class ejercico {
     System.out.println("es correcto"+nota); 
     else
    System.out.println("es incorrecto"+nota);
+ 
+        //EJERCICIO 2 BOLETIN 2
+        //Creamos un objeto Sacaner
+        Scanner sc = new Scanner (System.in);
+        //Pedir al usuario que introduzca una nota
+        System.out.println("Ingrese una nota");
+        double nota = Scanner.nextDouble();
+        //Definir rango
+        if (nota < 0 || > 10)
+        System.out.println("aprobado"+nota);
+        else
+        System.out.println("suspenso"+nota);
+ 
+        //EJERCICIO 3 BOLETIN 2
+        //Creamos un objeto Scanner
+        Scanner sc = new Scanner (System.in);
+        //Pedir al usuario que introduzca un nº entero
+        System.out.println("Ingrese un nº entero");
+        double entero = Scanner.nextDouble();
+        //Definir rango
+        if entero % 2 == 0{
+        System.out.println("El numero" + entero + "es par");
+        }else{
+        System.out.println("El numero" + entero + "es impar");
+        }
+        
+        //EJERCICIO 4 BOLETIN 2
+       
+        //Definir nombres
+        int productos, precio, descuento;
+         //Creamos un objeto Scanner
+        Scanner sc = new Scanner (System.in);
+        //Pedimos al usuario que ingrese precio
+        System.out.print("Ingrese el precio de su compra");
+        double precio = Scanner.nextDouble();
+        //pedimos al usuario que ingrese los productos sellecionados
+        System.out.print("Ingrese el nº de productos seleccionados");
+        double productos = Scanner.nextDouble();
+        if (productos=100){
+            System.out.println("Usted tendrá un descuento del 40%");
+            descuento=precio*40/100;
+            System.out.println("el total de su compra con descuento incluido es:"+decuento+);
+        }
+       else if (productos=25&&100){
+            System.out.println("ustede tendrá un descuento del 20%");
+            descuento=precio*20/100;
+            System.out.println("el total de su compra con descuento es:"+decuento);
+        }
+       else if (productos=10&&24){
+            System.out.println("usted tendrá un descuento del 10%");
+            descuento=precio*10/100;
+            System.out.println("el total de su compra con descuento es:"+descuento);
+        }
+       else if(productos<10){
+            System.out.println("usten no tendra descuento");
+            System.out.println("el total de su cuenta sin descuento es:"+precio);
+        }
+*/
+        //EJERCICIO 5 BOLETIN 2
     }
 }
