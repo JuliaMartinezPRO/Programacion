@@ -76,7 +76,7 @@ public class ejercico {
     Scanner sc = new Scanner(System.in);
     //pedir al usuario que introduzca una nota
     System.out.println("Ingrese una nota");
-    double nota = Scanner.nextDouble();
+    double nota = sc.nextDouble();
     //definir rango
     if (nota < 0 ||  > 10)
     System.out.println("es correcto"+nota); 
@@ -88,7 +88,7 @@ public class ejercico {
         Scanner sc = new Scanner (System.in);
         //Pedir al usuario que introduzca una nota
         System.out.println("Ingrese una nota");
-        double nota = Scanner.nextDouble();
+        double nota = sc.nextDouble();
         //Definir rango
         if (nota < 0 || > 10)
         System.out.println("aprobado"+nota);
@@ -100,14 +100,14 @@ public class ejercico {
         Scanner sc = new Scanner (System.in);
         //Pedir al usuario que introduzca un nº entero
         System.out.println("Ingrese un nº entero");
-        double entero = Scanner.nextDouble();
+        double entero = sc.nextDouble();
         //Definir rango
         if entero % 2 == 0{
         System.out.println("El numero" + entero + "es par");
         }else{
         System.out.println("El numero" + entero + "es impar");
         }
-        
+       
         //EJERCICIO 4 BOLETIN 2
        
         //Definir nombres
@@ -116,7 +116,7 @@ public class ejercico {
         Scanner sc = new Scanner (System.in);
         //Pedimos al usuario que ingrese precio
         System.out.print("Ingrese el precio de su compra");
-        double precio = Scanner.nextDouble();
+        double precio = sc.nextDouble();
         //pedimos al usuario que ingrese los productos sellecionados
         System.out.print("Ingrese el nº de productos seleccionados");
         double productos = Scanner.nextDouble();
@@ -141,9 +141,46 @@ public class ejercico {
         }
 */
         //EJERCICIO 5 BOLETIN 2
+        //definir nombres
+         double retencion=0.20;
+         double saldoNeto;
         //Creamos el objeto scanner para el salario
-        Scanner sc = new Scanner (System.in);
+        Scanner src = new Scanner (System.in);
         //Pedir al usuario que ingrese el salario
-        
+        System.out.println("Ingrese el salario");
+        double salario = src.nextDouble();
+        //Pedir al usuario que ingrese el Nº de hijos
+        System.out.println("ingrese el nº de hijos");
+        double hijos = src.nextDouble();
+        if (hijos<=2){
+            System.out.println("usted tendrá una retención del 20%");
+           saldoNeto=hijos-retencion;
+            System.out.println("El total de su salario neto es:"+saldoNeto);
+        }
+        double retencion1=0.15;
+        if (hijos<=5){
+            System.out.println("usted tendrá una retención del 15%");
+           saldoNeto=hijos-retencion1;
+            System.out.println("El total de su salario neto es:"+saldoNeto);
+        }
+        double retencion2=0.10;
+        if (hijos<=7){
+            System.out.println("usted tendrá una retención del 10%");
+           saldoNeto=hijos-retencion2;
+            System.out.println("El total de su salario neto es:"+saldoNeto);
+    }
+        double retencion3=0.05;
+        if (hijos<=9){
+            System.out.println("usted tendrá una retención del 15%");
+           saldoNeto=hijos-retencion3;
+            System.out.println("El total de su salario neto es:"+saldoNeto);
+}
+        double retencion4=0.00;
+        if (hijos>10){
+
+        System.out.println("usted tendrá una retención del 15%");
+        saldoNeto=hijos-retencion4;
+        System.out.println("El total de su salario neto es:"+saldoNeto);
+        }
     }
 }
