@@ -141,5 +141,9 @@ public class ejercico {
         }
 */
         //EJERCICIO 5 BOLETIN 2
+        //Creamos el objeto scanner para el salario
+        Scanner sc = new Scanner (System.in);
+        //Pedir al usuario que ingrese el salario
+        
     }
 }
