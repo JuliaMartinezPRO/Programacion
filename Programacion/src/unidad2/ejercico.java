@@ -139,7 +139,7 @@ public class ejercico {
             System.out.println("usten no tendra descuento");
             System.out.println("el total de su cuenta sin descuento es:"+precio);
         }
-*/
+
         //EJERCICIO 5 BOLETIN 2
         //definir nombres
          double retencion=0.20;
@@ -182,5 +182,22 @@ public class ejercico {
         saldoNeto=hijos-retencion4;
         System.out.println("El total de su salario neto es:"+saldoNeto);
         }
+     */   
+        //EJERCICIO 6
+        
+        //definir h como entero
+        int h;
+        //Definir hora,h2,m2,mensaje como caracter
+        int hora ,h2 ,m2 ,mensaje;
+        //creamos un objeto scanner para ingresar la hora 
+        Scanner scs = new Scanner(System.in);
+        //Pedimos al usuario que ingrese la hora
+        System.out.println("Ingrese una hora");
+        //int hora = scs.nextInt();
+   
+      
+       
+        //Debug breakpoint punto de ruptura
+        
     }
 }
