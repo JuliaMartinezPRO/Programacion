@@ -194,7 +194,8 @@ public class ejercico {
         //Pedimos al usuario que ingrese la hora
         System.out.println("Ingrese una hora");
         //int hora = scs.nextInt();
-   
+        int a = 9;
+                
       
        
         //Debug breakpoint punto de ruptura

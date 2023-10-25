@@ -12,7 +12,7 @@ package unidad1;
 public class Ejercicios {
 
     public static void main(String args[]) {
-/*
+/**
         int a = 5;
         int b = 10;
         System.out.println("valor de a " + 10);
@@ -70,7 +70,8 @@ public class Ejercicios {
    System.out.println(miInt);
     //ejercico 14 Escribir un programa que indique a cuántos días, horas, minutos y segundos
 //corresponden 86.455 segundos.//
-    
+ 
+  */   
 int segundos = 86460, minutos, horas, dias;
 int segundosDia, segundosHora, segundosMinuto;
 segundosDia = 24*60*60;
@@ -90,7 +91,7 @@ System.out.println(dias + "\n" + horas + "\n" + minutos + "\n" + segundos);
    int contador = 8;
    contador = (contador + 1) % 10;
   System.out.println(" Nuevo valor del contador "+contador);
-  //*
+  
   //ejercicio anidación
   //mayor que 70 = jubilado
   //menor que 70 = joven
@@ -121,7 +122,7 @@ System.out.println(dias + "\n" + horas + "\n" + minutos + "\n" + segundos);
        System.out.println("segundo intervalo");
   else
        System.out.println("tercer intervalo");
-  */
+  
       
        
     }
