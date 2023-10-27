@@ -198,7 +198,28 @@ public class ejercico {
                 
       
        
-        //Debug breakpoint punto de ruptura
+        //Ejercicio 1 boletin 2 tema 2 de estructuras repetitivas
+       
+        int suma = 0;
+        for (int i = 1; i<=100;i++){
+            suma = suma + i; 
+        }
+        System.out.println(" Resultado "+suma);
         
+        
+        //ejercico 2 boletin 2 de repetitivas
+        
+        //crear objeto scanner
+        Scanner entero = new Scanner (System.in);
+        //PEDIR AL USUARIO QUE INGRESE 5 NºS ENTEROS
+        System.out.println("Ingrese 5 números enteros");
+        int p = entero.nextInt();
+        int sumatorio = 0;
+        
+        for (int x = 0;x <= 5;x++){
+         sumatorio += p;
+    
+        }
+        System.out.println("resultado "+sumatorio/5); 
     }
 }
