@@ -182,7 +182,7 @@ public class ejercico {
         saldoNeto=hijos-retencion4;
         System.out.println("El total de su salario neto es:"+saldoNeto);
         }
-     */   
+     
         //EJERCICIO 6
         
         //definir h como entero
@@ -221,5 +221,22 @@ public class ejercico {
     
         }
         System.out.println("resultado "+sumatorio/5); 
+        */
+        Scanner par = new Scanner (System.in);
+        System.out.println("ingrese 2 numeros pares (2 100)");
+        int num1 = par.nextInt();
+        int sumatorio=0;
+        int num2 = par.nextInt();
+        if (num1<=0 || num2 > 2){
+            System.out.println("Ingrese un valor válido");
+        }
+        System.out.println("ingrese"+num1+"numeros:");
+        for (int x=1;x<=num1;x++){
+             System.out.println("numero"+x+":");
+           
+          
+            sumatorio=num1+num2;
+        }
+        System.out.println("resultado "+sumatorio);
     }
 }
