@@ -221,7 +221,7 @@ public class ejercico {
     
         }
         System.out.println("resultado "+sumatorio/5); 
-        */
+        
         Scanner par = new Scanner (System.in);
         System.out.println("ingrese 2 numeros pares (2 100)");
         int num1 = par.nextInt();
@@ -238,5 +238,17 @@ public class ejercico {
             sumatorio=num1+num2;
         }
         System.out.println("resultado "+sumatorio);
+        */
+        Scanner serieAr = new Scanner(System.in);
+        System.out.println("ingrese x terminos");
+        int input = serieAr.nextInt();
+        final double numerador = 1;
+        double suma=0;
+        double division;
+        for (int x=1;x<=input;x++){
+             division = numerador/x;
+            suma+=division;
+        }   
+        System.out.println("resultado "+suma);
     }
 }
