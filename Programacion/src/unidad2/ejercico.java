@@ -238,7 +238,7 @@ public class ejercico {
             sumatorio=num1+num2;
         }
         System.out.println("resultado "+sumatorio);
-        */
+        //EJERCICO 5
         Scanner serieAr = new Scanner(System.in);
         System.out.println("ingrese x terminos");
         int input = serieAr.nextInt();
@@ -250,5 +250,35 @@ public class ejercico {
             suma+=division;
         }   
         System.out.println("resultado "+suma);
+
+        //ejercicio 6
+        int terminos=5;
+        double num = 0;
+        double deno = 2;
+        double suma = 0;
+        double fraccion;
+        
+        for (int m=1;m<=terminos;m++){
+           fraccion = num/deno; 
+           suma+=fraccion;
+           num+=5;
+           deno*=3;
+        }
+        System.out.println(suma);
+   
+        //EJERCICIO 7
+        int terminosSerie=3;
+        double suma =0;
+        double devuelve;
+        double fraccion;
+        for (int j=1;j<=terminosSerie;j++){
+            devuelve=Math.pow(2,j);
+            fraccion=j/devuelve;
+            suma+=fraccion;
+        }
+        System.out.println(suma);
+*/
+        //EJERCICIO 8
+        
     }
 }
