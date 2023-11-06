@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author marfonjul
  */
-public class ejercico {
+public class EjsEstructurasRepetitivas {
 
     public static void main(String args[]) {
         /*
@@ -220,8 +220,9 @@ public class ejercico {
          sumatorio += p;
     
         }
-        System.out.println("resultado "+sumatorio/5); 
-        
+        System.out.println("resultado "+sumatorio/5);
+
+        //EJERCICIO 4
         Scanner par = new Scanner (System.in);
         System.out.println("ingrese 2 numeros pares (2 100)");
         int num1 = par.nextInt();
@@ -237,6 +238,7 @@ public class ejercico {
           
             sumatorio=num1+num2;
         }
+      
         System.out.println("resultado "+sumatorio);
         //EJERCICO 5
         Scanner serieAr = new Scanner(System.in);
@@ -279,6 +281,16 @@ public class ejercico {
         System.out.println(suma);
 */
         //EJERCICIO 8
-        
+       Scanner temperatura1=new Scanner (System.in);
+       System.out.println("Ingrese valor a calcular");
+       double desde = temperatura1.nextDouble();
+       Scanner temperatura2=new Scanner(System.in);
+       System.out.println("Ingrese otro valor");
+       double hasta=temperatura2.nextDouble();
+       double C=5(desde-32)/9;
+       double R=desde+459.67;
+       double K=C+273.15;
+       if(dede>hasta);
+       
     }
 }
