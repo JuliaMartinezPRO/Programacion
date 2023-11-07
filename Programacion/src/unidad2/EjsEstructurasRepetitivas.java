@@ -279,18 +279,44 @@ public class EjsEstructurasRepetitivas {
             suma+=fraccion;
         }
         System.out.println(suma);
-*/
+
         //EJERCICIO 8
        Scanner temperatura1=new Scanner (System.in);
        System.out.println("Ingrese valor a calcular");
        double desde = temperatura1.nextDouble();
-       Scanner temperatura2=new Scanner(System.in);
        System.out.println("Ingrese otro valor");
-       double hasta=temperatura2.nextDouble();
+       double hasta=temperatura1.nextDouble();
        double C=5(desde-32)/9;
        double R=desde+459.67;
-       double K=C+273.15;
-       if(dede>hasta);
-       
-    }
+       double K=hasta+273.15;
+       if(desde > hasta){
+           double temp = desde;
+           desde = hasta;
+           hasta = temp;
+           //sin acabar
+       }
+    */
+        //EJERCICIO 11
+        Scanner in = new Scanner (System.in);
+       int min = 0, max = 0;
+       int sumatorio =0;
+       System.out.println("Ingresa los números que quieres calcular");
+       String numeros = in.next();
+       int num = in.nextInt();
+       for (int x = 1;x<=num;x++){
+           int num2=in.nextInt();
+           if (x==1){
+               min=num2;
+               max=num2;
+           }
+           if(min>num2){
+               min=num2;
+           }
+           if(max<num2){
+               max=num2;
+           }
+           sumatorio+=num2;
+       }
+       System.out.println("El número máximo de los insertados es:" + max + ", el menor: " + min + ", y la media total es:"+(sumatorio/num));
+}
 }
