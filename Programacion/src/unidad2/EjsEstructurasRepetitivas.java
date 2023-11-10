@@ -295,7 +295,7 @@ public class EjsEstructurasRepetitivas {
            hasta = temp;
            //sin acabar
        }
-    */
+   
         //EJERCICIO 11
         Scanner in = new Scanner (System.in);
        int min = 0, max = 0;
@@ -318,5 +318,73 @@ public class EjsEstructurasRepetitivas {
            sumatorio+=num2;
        }
        System.out.println("El número máximo de los insertados es:" + max + ", el menor: " + min + ", y la media total es:"+(sumatorio/num));
-}
+
+        //EJERCICIO 12
+        //apartado a
+        //Creamos el objeto Scanner
+        Scanner in = new Scanner (System.in);
+        //pedir al usuario que ingrese el nº
+        System.out.println("Ingrese el número");
+        int numero = in.nextInt();
+        for (int x=1;x<=10;x++){
+            System.out.println("La tabla de multiplicar es:"+numero+"*"+x+"="+numero*x);
+        }
+        //apartado b ejercicio 12
+        for (int x=1;x<=9;x++){
+            System.out.println("la tabla del numero"+x);
+            for (int y=1;y<=10;y++){
+                System.out.println("la tabla de multiplicar es:"+x+"*"+y+"="+x*y);
+            }
+        System.out.println();
+        System.out.println();
+        }
+     
+        //EJERCICIO 13
+        //Creamos el objeto Scanner
+        Scanner in = new Scanner (System.in);
+        //Pedir al usuario que ingrese un nº
+        System.out.println("Escriba un número");
+        int n = in.nextInt();
+        double resultado=1;
+        int a = 1;
+        double resultadoi = 1;
+        double i=1;
+        double resultadoifraccion=0;
+        while (a<=n){
+            //multipicador
+            resultado=resultado*a;
+            a++;
+            //fraccion
+            resultadoi=1/i;
+            i++;
+            resultadoifraccion=resultadoifraccion+resultadoi;   
+        }
+        System.out.println("El resultado es:"+resultadoifraccion+(resultado*n));
+
+        //EJERCICIO 14
+        //Creamos el objeto Scanner
+        Scanner in = new Scanner (System.in);
+        //pedir al usuario que escriba un nº
+        System.out.println("Ingrese un número");
+        int n= in.nextInt();
+        while(n<=0);
+        for(int i=1;i<=n;i++){
+           if(n%i==0){
+               System.out.println("resultado"+i);
+           }
+        }
+*/
+        //EJERCICO 15 cuadrado de los 10 nºs pares
+        //definir suma y un valor como enteros
+        int n=0;
+        int resultado=1;
+        while(n<=10){
+            if(n%2==0){
+                resultado=n*n;
+                System.out.println("resultado"+n+"es:"+resultado);
+            }
+            n++;
+        }
+        
+    }
 }
