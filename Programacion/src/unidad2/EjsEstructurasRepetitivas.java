@@ -373,7 +373,7 @@ public class EjsEstructurasRepetitivas {
                System.out.println("resultado"+i);
            }
         }
-*/
+
         //EJERCICO 15 cuadrado de los 10 nºs pares
         //definir suma y un valor como enteros
         int n=0;
@@ -385,6 +385,25 @@ public class EjsEstructurasRepetitivas {
             }
             n++;
         }
-        
+*/
+          //EJERCICIO 12
+        //apartado a
+        //Creamos el objeto Scanner
+        Scanner in = new Scanner (System.in);
+        //pedir al usuario que ingrese el nº
+        System.out.println("Ingrese el número");
+        int numero = in.nextInt();
+        for (int x=1;x<=10;x++){
+            System.out.println("La tabla de multiplicar es:"+numero+"*"+x+"="+numero*x);
+        }
+        //apartado b ejercicio 12
+        for (int x=1;x<=9;x++){
+            System.out.println("la tabla del numero"+x);
+            for (int y=1;y<=10;y++){
+                System.out.println("la tabla de multiplicar es:"+x+"*"+y+"="+x*y);
+            }
+        System.out.println();
+        System.out.println();
+    }
     }
 }
