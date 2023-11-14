@@ -385,7 +385,6 @@ public class EjsEstructurasRepetitivas {
             }
             n++;
         }
-*/
           //EJERCICIO 12
         //apartado a
         //Creamos el objeto Scanner
@@ -404,6 +403,15 @@ public class EjsEstructurasRepetitivas {
             }
         System.out.println();
         System.out.println();
-    }
+*/
+        //EJERCICIO 16
+        //Creamos el objeto Scanner
+        Scanner sc = new Scanner (System.in);
+        //pedir al usuario que ingrese el nº que quiere calcular
+        System.out.println("Ingrese el nº que quiere calcular");
+        int n = sc.nextInt();
+        System.out.println("Indique la potencia mas alta a la que desea elevar"+n);
+        int i
+        
     }
 }
