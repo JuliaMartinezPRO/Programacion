@@ -11,7 +11,7 @@ package unidad2;
  */
 public class EjerciciosExpresiones {
     public static void main(String args[]) {
-    /*    
+      
         //ejercicio 1
         boolean a = (true && true) || false == true;
         //realizar la combinación de los booleans con el operador AND que estan dentro de los paréntesis que da como resultado true
@@ -39,18 +39,18 @@ public class EjerciciosExpresiones {
          //Por lo tanto, la expresión completa será falsa (false) porque ambas partes de la expresión con el operador && (y) deben ser verdaderas para que la expresión sea verdadera. En este caso, la primera parte es falsa.
          
          
-         //EJERCICIO 2
+       /*  //EJERCICIO 2
          //Puedes utilizar el operador de módulo (%) para determinar si un número es divisible por otro. La expresión sería verdadera si el resultado de la operación a % b es igual a cero, ya que esto indica que no hay un residuo al dividir a por b.
          boolean esDivisible;
                  esDivisible = (0 == (a % b));
          
-                 int probandin = (a % b)
+                 int probandin = (a % b);
                  boolean esDivisible;
                  esDivisible = (0 == (a % b));        
                  
        //a es el dividendo.
        
-       /*
+       */
        
                  
     } 

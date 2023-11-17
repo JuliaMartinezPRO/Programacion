@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ExamenUD2;
+package unidad2;
 import java.util.Scanner;
 /**
  *
  * @author marfonjul
  */
-public class fibonacci {
+public class UD2Fibonacci {
     public static void main(String arg[]){
        Scanner sc=new Scanner(System.in);
        int n=sc.nextInt();

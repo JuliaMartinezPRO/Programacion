@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ExamenUD2;
+package unidad2;
 import java.util.Scanner;
 /**
  *
  * @author marfonjul
  */
-public class juliaexamenUD2 {
+public class UD2Examen {
     public static void main (String arg[]){
         int opcionUno=0;
         int opcion2=0;
@@ -34,7 +34,7 @@ public class juliaexamenUD2 {
      Scanner scanner = new Scanner (System.in);
      //pedir al usuario que ingrese el numero
      System.out.println("Ingrese un número");
-     int n = scanner.nextInt ();
+     int n = scanner.nextInt();
      int num1=0;
      int num2=1;
      int suma = 0;
