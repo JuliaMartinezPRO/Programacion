@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author marfonjul
  */
 public class UD2Fibonacci {
-    public static void main(String arg[]){
+    public static void main(String[] args){
        Scanner sc=new Scanner(System.in);
        int n=sc.nextInt();
        int numero1=0;

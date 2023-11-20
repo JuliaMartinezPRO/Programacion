@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author marfonjul
  */
 public class UD2Examen {
-    public static void main (String arg[]){
+    public static void main(String[] args){
         int opcionUno=0;
         int opcion2=0;
         int opcion3=0;
