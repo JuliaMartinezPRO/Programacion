@@ -10,5 +10,17 @@ package unidad3;
  * @author marfonjul
  */
 public class TeoriaEjercicios {
-    
+    private static void SumarPrivado(int numero){
+    for (int i=1;i<=10;i++){
+        
+    } 
+    }
+    private static void SumarBanco(int num){
+        
+    }
+    public static void SumarPublico(String[]args){
+       
+        
+        
+    }
 }
