@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class EjsEstructurasRepetitivas {
 
-    public static void main(String args[]) {
+    public static void main(String [] args) {
         /*
         String persona="niño";
         switch (persona){
@@ -403,14 +403,25 @@ public class EjsEstructurasRepetitivas {
             }
         System.out.println();
         System.out.println();
-        //EJERCICIO 16
+*/  
+//EJERCICIO 16
         //Creamos el objeto Scanner
         Scanner sc = new Scanner (System.in);
         //pedir al usuario que ingrese el nº que quiere calcular
         System.out.println("Ingrese el nº que quiere calcular");
         int n = sc.nextInt();
         System.out.println("Indique la potencia mas alta a la que desea elevar"+n);
-        int i
-        */
+        int i = sc.nextInt();
+        int resultado = 0;
+        int x = 1;
+        while(x<i){
+            if(resultado<n){
+                resultado = n*n;
+            }else{
+                resultado = resultado*n;
+            }
+            x++;
+        }
+        System.out.println(resultado);
     }
 }
