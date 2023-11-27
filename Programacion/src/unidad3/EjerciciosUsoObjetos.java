@@ -10,32 +10,16 @@ package unidad3;
  * @author marfonjul
  */
 public class EjerciciosUsoObjetos {
-  private static int calcularDias(int mes){
-      
-  int numeroDias=-1;
-      swich(mes)
-      return 0;
-              //clasificar meses 30 o 30 dias
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                numeroDias=31;
-            break;
-            case 4:
-            case 6:
-            case 9:
-            case 11:
-                numeroDias = 30;
-            break;
-        return numeroDias;
-     case 2:
- 
-             
-      }    
+  private static int calcularDias(int mes,int ano){
+      if (mes==2){
+               // algoritmo de bisiesto
+               if(esBisiesto(ano)){
+                    System.out.println("Este mes tiene 29 dias");
+               }else{
+                   System.out.println("Este mes tiene 28 dias");
+               }
+      }
+
   }
   private static boolean esBisiesto(int anio){
 
