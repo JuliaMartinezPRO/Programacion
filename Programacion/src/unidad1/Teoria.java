@@ -11,7 +11,7 @@ package unidad1;
  */
 public class Teoria {
 
-    public static void main(String args[]) {
+    public static void main(String [] args) {
 
         int importe = 100;
         int descuento = 10;

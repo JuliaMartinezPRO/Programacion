@@ -10,7 +10,7 @@ package unidad2;
  * @author marfonjul
  */
 public class EjerciciosExpresiones {
-    public static void main(String args[]) {
+    public static void main(String [] args) {
       
         //ejercicio 1
         boolean a = (true && true) || false == true;
