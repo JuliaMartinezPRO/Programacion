@@ -5,6 +5,7 @@
  */
 
 package unidad3;
+import java.util.Scanner;
 
 /**
  *
@@ -12,22 +13,26 @@ package unidad3;
  */
 public class EjerciciosEstructurasRep {
 public static void main(String[]args){
-int numeroEj=1;
-swich (numeroEj){
+int numeroEj=7;
+switch (numeroEj){
 case 1:
 ejercicio1();
+break;
 case 2:
 ejercicio2();
+break;
 case 4:
 ejercicio4();
+break;
 case 5:
 ejercicio5();
+break;
 case 6:
 ejercicio6();
+break;
 case 7:
 ejercicio7();
-case 8:
-ejercicio8();
+break;
 }
 }
 private static void ejercicio1(){
@@ -60,13 +65,13 @@ private static void ejercicio2(){
         System.out.println("resultado "+sumatorio/5);
         return;
 }
-private static void ejercicio4(int num1,int num2,int sumatorio){
+private static void ejercicio4(){
  //EJERCICIO 4
         Scanner par = new Scanner (System.in);
         System.out.println("ingrese 2 numeros pares (2 100)");
-         num1 = par.nextInt();
-         sumatorio=0;
-         num2 = par.nextInt();
+         int num1 = par.nextInt();
+         int sumatorio=0;
+         int num2 = par.nextInt();
         if (num1<=0 || num2 > 2){
             System.out.println("Ingrese un valor válido");
         }
@@ -126,23 +131,6 @@ private static void ejercicio7(){
         }
         System.out.println(suma);
         return;
-}
-private static void ejercicio8(){
-  //EJERCICIO 8
-       Scanner temperatura1=new Scanner (System.in);
-       System.out.println("Ingrese valor a calcular");
-       double desde = temperatura1.nextDouble();
-       System.out.println("Ingrese otro valor");
-       double hasta=temperatura1.nextDouble();
-       double C=5(desde-32)/9;
-       double R=desde+459.67;
-       double K=hasta+273.15;
-       if(desde > hasta){
-           double temp = desde;
-           desde = hasta;
-           hasta = temp;
-           //sin acabar
-       }
 }
 
 }
