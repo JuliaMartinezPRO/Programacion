@@ -44,17 +44,22 @@ public class EjsEstructurasRepetitivas {
         int num1 = par.nextInt();
         int sumatoriow=0;
         int num2 = par.nextInt();
-        if (num1<=0 || num2 > 2){
-            System.out.println("Ingrese un valor válido");
+        if (num1<=num2){
         }
-        System.out.println("ingrese"+num1+"numeros:");
-        for (int x=1;x<=num1;x++){
-             System.out.println("numero"+x+":");
+         int CurrentNum = num1; //inicializar el primer num
+        do{//verificar si el numero actual es par
+            if(CurrentNum % 2 == 0){
+                System.out.println(CurrentNum);
+            }//Incrementar
+            CurrentNum ++;    
+        }while(CurrentNum < num2);
+        
            
           
             sumatoriow=num1+num2;
-             System.out.println("resultado " + sumatorioz);
-        }
+             System.out.println("resultado " + sumatoriow);
+        
+
       
         System.out.println("resultado "+sumatorio);
         //EJERCICO 5
@@ -235,6 +240,6 @@ public class EjsEstructurasRepetitivas {
         }
         System.out.println(resultadoc);
     }
-} //calcular mayor y menor numero
-     
-     //comprobar si el numero es par o impar.si es par se suma y si no,no
+ 
+}
+

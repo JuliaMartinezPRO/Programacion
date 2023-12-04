@@ -12,7 +12,7 @@ package unidad1;
 public class Ejercicios {
 
     public static void main(String [] args) {
-/**
+
         int a = 5;
         int b = 10;
         System.out.println("valor de a " + 10);
@@ -71,7 +71,7 @@ public class Ejercicios {
     //ejercico 14 Escribir un programa que indique a cuántos días, horas, minutos y segundos
 //corresponden 86.455 segundos.//
  
-  */   
+   
 int segundos = 86460, minutos, horas, dias;
 int segundosDia, segundosHora, segundosMinuto;
 segundosDia = 24*60*60;

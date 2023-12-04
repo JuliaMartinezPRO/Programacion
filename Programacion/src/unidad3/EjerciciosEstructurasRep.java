@@ -90,23 +90,32 @@ public class EjerciciosEstructurasRep {
     private static void ejercicio4() {
         //EJERCICIO 4
         Scanner par = new Scanner (System.in);
-        System.out.println("ingrese 2 numeros  ");
+        System.out.println("ingrese el primer numero");
         int num1 = par.nextInt();
+        System.out.println("ingrese el segundo numero");
         int num2 = par.nextInt();
-        int sumatorio=0;
-      //calcular mayor y menor numero
-       if(num1>num2){
-         System.out.println("el numero es par");
-     }
-     //comprobar si el numero es par o impar.si es par se suma y si no,no
-   
-        for (int x=1;x<=num1;x++){
-             System.out.println("numero"+x+":");
-            sumatorio+=num1+num2;
-             System.out.println("resultado " + sumatorio);
-        }
-        return;
+        int suma=0;
+        //asegurarse de que el numero2 es mayor que el numero1
+        if(num1>=num2){
+            int temp = num1;
+            num1=num2;
+            num2=temp;   
+        }      
+        //imprimir los numeros pares entre numero1 y numero2 usando un bucle do-while
+        System.out.println("numero pares entre"+num1+"y"+num2+":");
+        int CurrentNum = num1; //inicializar el primer num
+        do{//verificar si el numero actual es par
+            if(CurrentNum % 2 == 0){
+                  suma+=CurrentNum;
+                System.out.println(CurrentNum);
+            }//Incrementar
+            CurrentNum ++;  
+        }while(CurrentNum < num2);
+       
+         System.out.println("Resultado suma de los pares: "+suma);
+       return;
     }
+
 
     private static void ejercicio5() {
        //EJERCICO 5

@@ -37,21 +37,6 @@ public class EjerciciosExpresiones {
          System.out.println("g2:"+g2);
          //La primera parte (x>3) es falsa, pero la segunda parte (y==4 o x+y≤z) es verdadera, porque al menos una de las partes es verdadera. 
          //Por lo tanto, la expresión completa será falsa (false) porque ambas partes de la expresión con el operador && (y) deben ser verdaderas para que la expresión sea verdadera. En este caso, la primera parte es falsa.
-         
-         
-       /*  //EJERCICIO 2
-         //Puedes utilizar el operador de módulo (%) para determinar si un número es divisible por otro. La expresión sería verdadera si el resultado de la operación a % b es igual a cero, ya que esto indica que no hay un residuo al dividir a por b.
-         boolean esDivisible;
-                 esDivisible = (0 == (a % b));
-         
-                 int probandin = (a % b);
-                 boolean esDivisible;
-                 esDivisible = (0 == (a % b));        
-                 
-       //a es el dividendo.
-       
-       */
-       
-                 
+                  
     } 
 }
