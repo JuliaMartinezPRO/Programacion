@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package unidad3;
+
 import java.util.Scanner;
 
 /**
@@ -12,128 +12,283 @@ import java.util.Scanner;
  * @author marfonjul
  */
 public class EjerciciosEstructurasRep {
-public static void main(String[]args){
-int numeroEj=7;
-switch (numeroEj){
-case 1:
-ejercicio1();
-break;
-case 2:
-ejercicio2();
-break;
-case 4:
-ejercicio4();
-break;
-case 5:
-ejercicio5();
-break;
-case 6:
-ejercicio6();
-break;
-case 7:
-ejercicio7();
-break;
-}
-}
-private static void ejercicio1(){
-  //Ejercicio 1 boletin 2 tema 2 de estructuras repetitivas
-        int suma=0;
-        for (int i = 1; i<=100;i++){
-            suma = suma + i; 
-        }
-        System.out.println(" Resultado "+suma);
-        return;
-        }
-        
 
-private static void ejercicio2(){
- //EJERCICIO 2 BOLETIN 2
-        
-       //ejercico 2 boletin 2 de repetitivas
-        
+    public static void main(String[] args) {
+        int numeroEj = 4;
+        switch (numeroEj) {
+            case 1:
+                ejercicio1();
+                break;
+            case 2:
+                ejercicio2();
+                break;
+            case 4:
+                ejercicio4();
+                break;
+            case 5:
+                ejercicio5();
+                break;
+            case 6:
+                ejercicio6();
+                break;
+            case 7:
+                ejercicio7();
+                break;
+            case 8:
+                ejercicio10();
+                break;
+            case 9:
+                ejercicio11();
+                break;
+            case 10:
+                ejercicio12();
+                break;
+            case 11:
+                ejercicio13();
+                break;
+            case 12:
+                ejercicio14();
+                break;
+            case 13:
+                ejercicio15();
+                break;
+            case 14:
+                ejercicio16();
+                break;
+        }
+    }
+
+    private static void ejercicio1() {
+        //Ejercicio 1 boletin 2 tema 2 de estructuras repetitivas
+        int suma = 0;
+        for (int i = 1; i <= 100; i++) {
+            suma = suma + i;
+        }
+        System.out.println(" Resultado " + suma);
+        return;
+    }
+
+    private static void ejercicio2() {
+        //EJERCICIO 2 BOLETIN 2
+
+        //ejercico 2 boletin 2 de repetitivas
         //crear objeto scanner
-        Scanner entero = new Scanner (System.in);
+        Scanner entero = new Scanner(System.in);
         //PEDIR AL USUARIO QUE INGRESE 5 NºS ENTEROS
         System.out.println("Ingrese 5 números enteros");
         int p = entero.nextInt();
         int sumatorio = 0;
-        
-        for (int x = 0;x <= 5;x++){
-         sumatorio += p;
-    
+
+        for (int x = 0; x <= 5; x++) {
+            sumatorio += p;
+
         }
-        System.out.println("resultado "+sumatorio/5);
+        System.out.println("resultado " + sumatorio / 5);
         return;
-}
-private static void ejercicio4(){
- //EJERCICIO 4
+    }
+
+    private static void ejercicio4() {
+        //EJERCICIO 4
         Scanner par = new Scanner (System.in);
-        System.out.println("ingrese 2 numeros pares (2 100)");
-         int num1 = par.nextInt();
-         int sumatorio=0;
-         int num2 = par.nextInt();
-        if (num1<=0 || num2 > 2){
-            System.out.println("Ingrese un valor válido");
-        }
-        System.out.println("ingrese"+num1+"numeros:");
+        System.out.println("ingrese 2 numeros  ");
+        int num1 = par.nextInt();
+        int num2 = par.nextInt();
+        int sumatorio=0;
+      //calcular mayor y menor numero
+       if(num1>num2){
+         System.out.println("el numero es par");
+     }
+     //comprobar si el numero es par o impar.si es par se suma y si no,no
+   
         for (int x=1;x<=num1;x++){
              System.out.println("numero"+x+":");
-           
-          
-            sumatorio=num1+num2;
+            sumatorio+=num1+num2;
+             System.out.println("resultado " + sumatorio);
         }
-      
-        System.out.println("resultado "+sumatorio);
         return;
-}
-private static void ejercicio5(){
- //EJERCICO 5
+    }
+
+    private static void ejercicio5() {
+       //EJERCICO 5
         Scanner serieAr = new Scanner(System.in);
         System.out.println("ingrese x terminos");
         int input = serieAr.nextInt();
         final double numerador = 1;
-        double suma=0;
+        double sumaw=0;
         double division;
         for (int x=1;x<=input;x++){
              division = numerador/x;
-            suma+=division;
+            sumaw+=division;
         }   
-        System.out.println("resultado "+suma);
+        System.out.println("resultado "+sumaw);
         return;
-}
-private static void ejercicio6(){
-//ejercicio 6
+    }
+
+    private static void ejercicio6() {
+        //ejercicio 6
         int terminos=5;
         double num = 0;
         double deno = 2;
-        double suma = 0;
+        double sumac = 0;
         double fraccion;
         
         for (int m=1;m<=terminos;m++){
            fraccion = num/deno; 
-           suma+=fraccion;
+           sumac+=fraccion;
            num+=5;
            deno*=3;
         }
-        System.out.println(suma);
-   return;
-}
-private static void ejercicio7(){
- //EJERCICIO 7
+        System.out.println(sumac);
+        return;
+    }
+
+    private static void ejercicio7() {
+       //EJERCICIO 7
         int terminosSerie=3;
-        double suma =0;
+        double sumat =0;
         double devuelve;
-        double fraccion;
+        double fraction;
         for (int j=1;j<=terminosSerie;j++){
             devuelve=Math.pow(2,j);
-            fraccion=j/devuelve;
-            suma+=fraccion;
+            fraction=j/devuelve;
+            sumat+=fraction;
         }
-        System.out.println(suma);
+        System.out.println(sumat);
+        return;
+    }
+    private static void ejercicio10(){
+        //EJERCICIO 10
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Ingrese un valor entero");
+        int n = sc.nextInt();
+        int terminal = 1;
+        for(int x=1;x<n;x++){
+        System.out.println(terminal+"");
+        //calcular siguiente termino serie
+        terminal = -terminal*2;
+        }
+        return;
+    }
+    private static void ejercicio11(){
+      //EJERCICIO 11
+        Scanner in = new Scanner (System.in);
+       int min = 0, max = 0;
+       int sumatorios =0;
+       System.out.println("Ingresa los números que quieres calcular");
+       String numeros = in.next();
+       int nums = in.nextInt();
+       for (int x = 1;x<=nums;x++){
+           int nums2=in.nextInt();
+           if (x==1){
+               min=nums2;
+               max=nums2;
+           }
+           if(min>nums2){
+               min=nums2;
+           }
+           if(max<nums2){
+               max=nums2;
+           }
+           sumatorios+=nums2;
+       }
+       System.out.println("El número máximo de los insertados es:" + max + ", el menor: " + min + ", y la media total es:"+(sumatorios/nums));
+       return;
+}
+    private static void ejercicio12(){
+     //EJERCICIO 12
+        //apartado a
+        //Creamos el objeto Scanner
+        Scanner ins = new Scanner (System.in);
+        //pedir al usuario que ingrese el nº
+        System.out.println("Ingrese el número");
+        int numero = ins.nextInt();
+        for (int x=1;x<=10;x++){
+            System.out.println("La tabla de multiplicar es:"+numero+"*"+x+"="+numero*x);
+        }
+        //apartado b ejercicio 12
+        for (int x=1;x<=9;x++){
+            System.out.println("la tabla del numero"+x);
+            for (int y=1;y<=10;y++){
+                System.out.println("la tabla de multiplicar es:"+x+"*"+y+"="+x*y);
+            }
+        System.out.println();
+        System.out.println();
+        }
         return;
 }
-
+    private static void ejercicio13(){
+        //EJERCICIO 13
+        //Creamos el objeto Scanner
+        Scanner ine = new Scanner (System.in);
+        //Pedir al usuario que ingrese un nº
+        System.out.println("Escriba un número");
+        int s = ine.nextInt();
+        double resultado=1;
+        int a = 1;
+        double resultadoi = 1;
+        double i=1;
+        double resultadoifraccion=0;
+        while (a<=s){
+            //multipicador
+            resultado=resultado*a;
+            a++;
+            //fraccion
+            resultadoi=1/i;
+            i++;
+            resultadoifraccion=resultadoifraccion+resultadoi;   
+        }
+        System.out.println("El resultado es:"+resultadoifraccion+(resultado*s));
+        return;
+    }
+    private static void ejercicio14(){
+            //EJERCICIO 14
+        //Creamos el objeto Scanner
+        Scanner itn = new Scanner (System.in);
+        //pedir al usuario que escriba un nº
+        System.out.println("Ingrese un número");
+        int u= itn.nextInt();
+        while(u<=0);
+        for(int r=1;r<=u;r++){
+           if(u%r==0){
+               System.out.println("resultado"+r);
+           }
+        }
+        return;
+    }
+    private static void ejercicio15(){
+         //EJERCICO 15 cuadrado de los 10 nºs pares
+        //definir suma y un valor como enteros
+        int o=0;
+        int resultados=1;
+        while(o<=10){
+            if(o%2==0){
+                resultados=o*o;
+                System.out.println("resultado"+o+"es:"+resultados);
+            }
+            o++;   
+        }
+        return;
+    }
+    private static void ejercicio16(){
+        //EJERCICIO 16
+        //Creamos el objeto Scanner
+        Scanner scs = new Scanner (System.in);
+        //pedir al usuario que ingrese el nº que quiere calcular
+        System.out.println("Ingrese el nº que quiere calcular");
+        int np = scs.nextInt();
+        System.out.println("Indique la potencia mas alta a la que desea elevar"+np);
+        int ic = scs.nextInt();
+        int resultadoc = 0;
+        int x = 1;
+        while(x<ic){
+            if(resultadoc<np){
+                resultadoc = np*np;
+            }else{
+                resultadoc = resultadoc*np;
+            }
+            x++;
+        }
+        System.out.println(resultadoc);
+        return;
+    }
 }
-
-
-
