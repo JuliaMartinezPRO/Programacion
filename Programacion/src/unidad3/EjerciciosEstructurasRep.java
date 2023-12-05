@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class EjerciciosEstructurasRep {
 
     public static void main(String[] args) {
-        int numeroEj = 11;
+        int numeroEj = 4;
         switch (numeroEj) {
             case 1:
                 ejercicio1();
@@ -102,7 +102,7 @@ public class EjerciciosEstructurasRep {
             num2=temp;   
         }      
         //imprimir los numeros pares entre numero1 y numero2 usando un bucle do-while
-        System.out.println("numero pares entre"+num1+"y"+num2+":");
+        
         int CurrentNum = num1; //inicializar el primer num
         do{//verificar si el numero actual es par
             if(CurrentNum % 2 == 0){
