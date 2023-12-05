@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class EjerciciosEstructurasRep {
 
     public static void main(String[] args) {
-        int numeroEj = 4;
+        int numeroEj = 11;
         switch (numeroEj) {
             case 1:
                 ejercicio1();
@@ -179,29 +179,35 @@ public class EjerciciosEstructurasRep {
         return;
     }
     private static void ejercicio11(){
-      //EJERCICIO 11
-        Scanner in = new Scanner (System.in);
-       int min = 0, max = 0;
-       int sumatorios =0;
-       System.out.println("Ingresa los números que quieres calcular");
-       String numeros = in.next();
-       int nums = in.nextInt();
-       for (int x = 1;x<=nums;x++){
-           int nums2=in.nextInt();
-           if (x==1){
-               min=nums2;
-               max=nums2;
-           }
-           if(min>nums2){
-               min=nums2;
-           }
-           if(max<nums2){
-               max=nums2;
-           }
-           sumatorios+=nums2;
-       }
-       System.out.println("El número máximo de los insertados es:" + max + ", el menor: " + min + ", y la media total es:"+(sumatorios/nums));
-       return;
+// Ejercicio 11
+      Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese la cantidad de números: ");
+
+        int n = scanner.nextInt(), max = Integer.MIN_VALUE, min = Integer.MAX_VALUE, sum = 0;
+
+       
+
+        for (int i = 0, num; i < n; i++) {
+
+            System.out.print("Ingrese el número #" + (i + 1) + ": ");
+
+            num = scanner.nextInt();
+
+            max = Math.max(max, num);
+
+            min = Math.min(min, num);
+
+            sum += num;
+
+        }
+
+       
+
+        System.out.println("El número mayor es: " + max + "\nEl número menor es: " + min +
+
+                           "\nLa media de los números es: " + (double) sum / n);
+        return;
 }
     private static void ejercicio12(){
      //EJERCICIO 12
