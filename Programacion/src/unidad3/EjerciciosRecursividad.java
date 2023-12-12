@@ -12,10 +12,7 @@ import java.util.Scanner;
 public class EjerciciosRecursividad {
     public static void main (String[]args){
      
-                //ejercicioFactorial();
-             
-                factorial(4);
-                
+        
             
     }
     //EJERCICIO 1 CALCULAR FACTORIAL
@@ -35,18 +32,21 @@ public class EjerciciosRecursividad {
         calcularFactorial(n);
 }
      //EJERCICIO 2 CALCULAR CASO BASE Y LLAMARSE A SI MISMO
-     private static void calcularCasoBase(int n){
+     private int fatctorial(int n){
          int factorial=1;
          for(int i=n;i>=2;i--){
              factorial*=i;
          }
          System.out.println(n);
+         return factorial;
      }
-     private static int factorial(int n){
-         if(n == 1){
-        return n * factorial(n-1);
+     private int factorial(int n){
+         if(n == 1||n==0){
+            return n * factorial(n-1);
+         }else{
+            return 1;
          }
-       System.out.println(n);
-       return n;
+         
      }
+     
 }
