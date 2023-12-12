@@ -6,6 +6,7 @@
 package unidad3;
 
 import java.util.Scanner;
+import java.lang.Math;
 import static unidad3.EjerciciosUsoDeObjetos.obtenerDiasEnMes;
 
 /**
@@ -18,7 +19,15 @@ public class EjerciciosUsoDeObjetos {
 
 
     public static void main(String[] args) {
-
+        //ejercicio 14
+  Scanner sc = new Scanner(System.in);
+    System.out.println("Cuántos nºs desea generar?");
+    int n=sc.nextInt();
+    //Respuesta
+    System.out.println("sucesión fibonacci hasta el termino"+n+"es:");
+    for (int i=1;i<=n;i++){
+    System.out.print
+}
         // Ejemplo de uso
 
         int mes = 2; // Febrero
@@ -258,6 +267,37 @@ public static int obtenerDiasEnMes(int mes, int anio) {
 
     }
     //EJERCICIO 12
+    public static int contardigitos(int num){
+        //si el numero es menor que 10 tiene solo un dígito
+        if(Math.abs(num)<10){
+            return 1;
+        }else{
+            //llamada recursiva con el cosciente de la división por 10
+            return 1 + contardigitos(num/10);
+        }
+    }
+    //EJERCICIO 13
+    public static double calcularPotencia(double x , int n){
+        //caso base:cualquier nº elevado a la potencia 0 es 1
+        if(n==0){
+            return 1;
+        }
+        //caso especial:si la potencia es negativa devolver el inverso de la potencia positiva
+        if(n<o){
+            return 1 / (x * calcularPotencia(x,-n-1));
+        }
+        //llamada recursiva multiplicando x por x elevado a 1 (n-1)
+        return x*calcularPotencia(x,n-1);
+    }
+    //EJERCICIO 14
     
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Cuántos nºs desea generar?");
+    int n=sc.nextInt();
+    //Respuesta
+    System.out.println("sucesión fibonacci hasta el termino"+n+"es:");
+    for (int i=1;i<=n;i++){
+    
+}
 
 }
