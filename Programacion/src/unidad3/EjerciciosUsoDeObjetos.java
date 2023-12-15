@@ -15,11 +15,10 @@ import static unidad3.EjerciciosUsoDeObjetos.obtenerDiasEnMes;
  */
 public class EjerciciosUsoDeObjetos {
 
-//EJERCICIO 1 BOLETIN U3 USO DE OBJETOS
 
 
     public static void main(String[] args) {
-        //ejercicio 14
+      //ej14
   Scanner sc = new Scanner(System.in);
     System.out.println("Cuántos nºs desea generar?");
     int n=sc.nextInt();
@@ -28,6 +27,8 @@ public class EjerciciosUsoDeObjetos {
     for (int i=1;i<=n;i++){
     System.out.print
 }
+    //EJERCICIO 1 BOLETIN U3 USO DE OBJETOS
+
         // Ejemplo de uso
 
         int mes = 2; // Febrero
@@ -114,20 +115,14 @@ public class EjerciciosUsoDeObjetos {
 
     }
 
-}
+
 
  
 
 //EJERCICIO 2 BOLETIN U3 USO DE OBJETOS
 
 
-
- 
-
-public class ValidadorFecha {
-
- 
-
+    
     public static void main(String[] args) {
 
         // Solicitar la fecha por teclado
@@ -299,5 +294,6 @@ public static int obtenerDiasEnMes(int mes, int anio) {
     for (int i=1;i<=n;i++){
     
 }
+
 
 }
