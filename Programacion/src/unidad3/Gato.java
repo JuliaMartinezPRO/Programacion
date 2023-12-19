@@ -38,7 +38,11 @@ public class Gato {
     public static void main(String[] args) {
         Gato pepe = new Gato(20, "persa", "gris", 22.3, "curioso");
         pepe.color = "gris";
-        System.out.println(pepe.color);
+        pepe.edad = 20;
+        pepe.raza = "persa";
+        pepe.peso = 22.3;
+        pepe.caracter = "curioso";
+        System.out.println(pepe.color+pepe.edad+pepe.raza+pepe.peso+pepe.caracter);
 
         Gato raul = new Gato(3, "turco", "negro", 17.7, "juguetón");
         raul.color = "negro";
