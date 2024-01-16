@@ -9,7 +9,7 @@ package unidad4.teoria;
  *
  * @author marfonjul
  */
-public enum ejercicioNutriscore {  MUYSANO, SANO, NEUTRAL, MALO, MUYMALO
+public enum EjercicioNutriscore {  MUYSANO, SANO, NEUTRAL, MALO, MUYMALO
  
   
 }

@@ -5,36 +5,37 @@
  */
 package unidad4.teoria;
 import java.util.Scanner;
-import unidad4.teoria.ejercicioNutriscore;
+import unidad4.teoria.EjercicioNutriscore;
 
 /**
  *
  * @author marfonjul
  */
-public class teoria {
+public class Teoria {
     
     
     public static void main(String [] args){
       
         Scanner sc = new Scanner(System.in);
-        String estado = sc.nextLine();
-        System.out.println("ingrese el estado");
-       ejercicioNutriscore estado = ejercicioNutriscore.MUYSANO;
+         System.out.println("ingrese el estado");
+        String estad = sc.nextLine();
+       
+       EjercicioNutriscore estado = EjercicioNutriscore.MUYSANO;
         switch(estado){
             case MUYMALO:
-                estado=ejercicioNutriscore.MUYMALO;
+                estado=EjercicioNutriscore.MUYMALO;
                 break;
             case MALO:
-                estado=ejercicioNutriscore.MALO;
+                estado=EjercicioNutriscore.MALO;
                 break;
             case NEUTRAL:
-                estado=ejercicioNutriscore.NEUTRAL;
+                estado=EjercicioNutriscore.NEUTRAL;
                 break;
             case SANO:
-                estado=ejercicioNutriscore.SANO;
+                estado=EjercicioNutriscore.SANO;
                 break;
             case MUYSANO:
-                estado=ejercicioNutriscore.MUYSANO;
+                estado=EjercicioNutriscore.MUYSANO;
                 break;
             default:
         }
