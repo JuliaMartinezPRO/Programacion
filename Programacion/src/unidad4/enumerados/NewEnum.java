@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java.lang;
+package unidad4.enumerados;
 
 /**
  *
  * @author marfonjul
  */
-public class math {
+public enum NewEnum {
     
 }
