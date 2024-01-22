@@ -25,7 +25,7 @@ public class EjerciciosUsoDeObjetos {
     //Respuesta
     System.out.println("sucesión fibonacci hasta el termino"+n+"es:");
     for (int i=1;i<=n;i++){
-    System.out.print
+ 
 }
     //EJERCICIO 1 BOLETIN U3 USO DE OBJETOS
 
@@ -123,7 +123,7 @@ public class EjerciciosUsoDeObjetos {
 
 
     
-    public static void main(String[] args) {
+    private static void main(String[] args) {
 
         // Solicitar la fecha por teclado
 

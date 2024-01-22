@@ -21,21 +21,21 @@ public class Teoria {
         String estad = sc.nextLine();
        
        EjercicioNutriscore estado = EjercicioNutriscore.MUYSANO;
-        switch(estado){
+        switch(EjercicioNutriscore.valueOf(estad) ){
             case MUYMALO:
-                estado=EjercicioNutriscore.MUYMALO;
+                System.out.println("MUY MALO");
                 break;
             case MALO:
-                estado=EjercicioNutriscore.MALO;
+                System.out.println("MALO");
                 break;
             case NEUTRAL:
-                estado=EjercicioNutriscore.NEUTRAL;
+                System.out.println("NEUTRAL");
                 break;
             case SANO:
-                estado=EjercicioNutriscore.SANO;
+                System.out.println("SANO");
                 break;
             case MUYSANO:
-                estado=EjercicioNutriscore.MUYSANO;
+               System.out.println("MUY SANO");
                 break;
             default:
         }
@@ -63,7 +63,7 @@ public class Teoria {
     //matriz de 3 filas y 3 columnas
     int[][] matriz ={ {0,0,0}, {1,1,1}, {2,2,2}};
     // El siguiente ejemplo imprime por pantalla el contenido de una matriz:
-     for (int fila= 0; fila<matriz.length; fila++){
+    for (int fila= 0; fila<matriz.length; fila++){
     for (int col=0; col<matriz[fila].length; col++){
         System.out.println(fila +":" + col + ":" + matriz[fila][col]);
     }

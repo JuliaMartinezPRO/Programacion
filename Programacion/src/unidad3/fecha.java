@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package unidad4.enumerados;
+package unidad3;
 
 /**
  *
  * @author marfonjul
  */
-public enum NewEnum {
+public class fecha {
     
 }
