@@ -18,7 +18,6 @@ public class boletin4 {
 
         // Rellenar el vector con valores ficticios
         for (int i = 0; i < tamano; i++) {
-            // Aquí puedes generar valores ficticios según tus necesidades
             vector[i] = i * 2;
         }
 
@@ -27,7 +26,7 @@ public class boletin4 {
         for (int i = 0; i < tamano; i++) {
             System.out.print(vector[i]);
 
-            // Agregar un espacio si no es el último elemento
+            // Agregar un espacio 
             if (i < tamano - 1) {
                 System.out.print(" ");
             }

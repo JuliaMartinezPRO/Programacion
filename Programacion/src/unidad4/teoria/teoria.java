@@ -51,7 +51,7 @@ public class Teoria {
     System.out.println(tabla2[0].length); // 2 (número de columnas)
     System.out.println(tabla2[1].length); // 3 (número de columnas)
     //otro ejemplo
-    private  int sumaCol(int[][] matriz, int columna){
+    private int  sumaCol(int[][] matriz, int columna){
         int suma = 0;
         for (int fila = 0; fila < matriz.length; fila++){
             suma += matriz[fila][columna];
@@ -63,9 +63,9 @@ public class Teoria {
     //matriz de 3 filas y 3 columnas
     int[][] matriz ={ {0,0,0}, {1,1,1}, {2,2,2}};
     // El siguiente ejemplo imprime por pantalla el contenido de una matriz:
-     for (int fila = 0; fila<matriz.length; fila++){
+     for (int fila= 0; fila<matriz.length; fila++){
     for (int col=0; col<matriz[fila].length; col++){
-        System.err.println(fila +":" + col + ":" + matriz[fila][col]);
+        System.out.println(fila +":" + col + ":" + matriz[fila][col]);
     }
 }
     //alternativamente
@@ -89,17 +89,6 @@ public class Teoria {
     }
 }
  
-    public static void main(String[] args) {
-        int[] enteros = {1, 2, 3};
-        prueba(enteros);
-        for(int i=0; i<enteros.length; i++){
-            System.out.println(enteros[i]);
-        }
-        public void prueba(int [] enteros){
-            for(int i=0; i<enteros.length; i++){
-                enteros[i] *=2;
-            }
-        }
-    }
+  
 }
 }
