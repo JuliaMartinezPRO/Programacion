@@ -14,25 +14,8 @@ public class boletin4 {
         Scanner sc = new Scanner(System.in);
         System.err.println("ingrese un tamaño de vetor");
         String tamano = sc.nextLine();
-        int[] vector = new int[tamano];
-
-        // Rellenar el vector con valores ficticios
-        for (int i = 0; i < tamano; i++) {
-            vector[i] = i * 2;
-        }
-
-        // Imprimir el contenido del vector en una línea
-        System.out.print("Contenido del vector: ");
-        for (int i = 0; i < tamano; i++) {
-            System.out.print(vector[i]);
-
-            // Agregar un espacio 
-            if (i < tamano - 1) {
-                System.out.print(" ");
-            }
+     }
         }
 
     
-    }
- 
-}
+    

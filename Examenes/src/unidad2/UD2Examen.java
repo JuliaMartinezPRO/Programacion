@@ -34,12 +34,12 @@ public class UD2Examen {
      Scanner scanner = new Scanner (System.in);
      //pedir al usuario que ingrese el numero
      System.out.println("Ingrese un número");
-     int n = scanner.nextInt();
+     int h = scanner.nextInt();
      int num1=0;
      int num2=1;
      int suma = 0;
      for(int x=num1;x<=num2;x++){
-         suma += suma*n;
+         suma += suma*h;
      }
      System.out.println("resultado"+n);
      //OPCION1
@@ -47,7 +47,7 @@ public class UD2Examen {
      int numero2=3;
      int multiplicar=0;
      for (int y=1;y<=2;y++){
-        int resultado*=(int)math.pow(2,y);
+       
          multiplicar = numero1*numero2;
      }
            System.out.println("resultado"+multiplicar);

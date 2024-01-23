@@ -7,7 +7,7 @@ package unidad3;
 
 import java.util.Scanner;
 import java.lang.Math;
-import static unidad3.EjerciciosUsoDeObjetos.obtenerDiasEnMes;
+import static unidad2.paquete.Fecha.obtenerDiasEnMes;
 
 /**
  *
@@ -41,7 +41,7 @@ public class EjerciciosUsoDeObjetos {
 
         System.out.println("El mes " + mes + " en el año " + anio + " tiene " + dias + " días.");
 
-    }
+   
 
  
 
@@ -59,7 +59,7 @@ public class EjerciciosUsoDeObjetos {
 
      */
 
-    public static int obtenerDiasEnMes(int mes, int anio) {
+    public int otbtenerDiasEnMes(int mes, int anio) {
 
         // Validar que el mes esté en el rango válido (entre 1 y 12) y que el año sea positivo.
 
@@ -123,7 +123,7 @@ public class EjerciciosUsoDeObjetos {
 
 
     
-    private static void main(String[] args) {
+    public static boolean fehcavl(){
 
         // Solicitar la fecha por teclado
 
@@ -148,8 +148,8 @@ public class EjerciciosUsoDeObjetos {
             System.out.println("La fecha ingresada no es válida.");
 
         }
-
-    }
+        return false;
+ }
 
  
 
@@ -206,7 +206,7 @@ public class EjerciciosUsoDeObjetos {
  
 
     // Resto del código del ejercicio anterior (obtenerDiasEnMes y esBisiesto)...
-public static int obtenerDiasEnMes(int mes, int anio) {
+public static int ottbtenerDiasEnMes(int mes, int anio) {
 
         // Validar que el mes esté en el rango válido (entre 1 y 12) y que el año sea positivo.
 
@@ -254,7 +254,7 @@ public static int obtenerDiasEnMes(int mes, int anio) {
 
      */
 
-    public static boolean esBisiesto(int anio) {
+    public static boolean etsBisiesto(int anio) {
 
         // Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
 
@@ -278,22 +278,16 @@ public static int obtenerDiasEnMes(int mes, int anio) {
             return 1;
         }
         //caso especial:si la potencia es negativa devolver el inverso de la potencia positiva
-        if(n<o){
+        if(n<0){
             return 1 / (x * calcularPotencia(x,-n-1));
         }
         //llamada recursiva multiplicando x por x elevado a 1 (n-1)
         return x*calcularPotencia(x,n-1);
     }
-    //EJERCICIO 14
-    
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Cuántos nºs desea generar?");
-    int n=sc.nextInt();
-    //Respuesta
-    System.out.println("sucesión fibonacci hasta el termino"+n+"es:");
-    for (int i=1;i<=n;i++){
-    
+   
+}
 }
 
 
-}
+
+

@@ -51,9 +51,22 @@ public class Teoria {
     System.out.println(tabla2[0].length); // 2 (número de columnas)
     System.out.println(tabla2[1].length); // 3 (número de columnas)
     //otro ejemplo
-    private int  sumaCol(int[][] matriz, int columna){
+
+    /**
+     *
+     * @param matriz
+     * @param columna
+     */
+
+    /**
+     *
+     * @param matriz
+     * @param columna
+     * @return
+     */
+    private int sumaCol(int[][] matriz, int columna){
         int suma = 0;
-        for (int fila = 0; fila < matriz.length; fila++){
+        for (int fila = 0; fila < matriz.length; fila++) {
             suma += matriz[fila][columna];
             return suma;
         }
@@ -63,9 +76,9 @@ public class Teoria {
     //matriz de 3 filas y 3 columnas
     int[][] matriz ={ {0,0,0}, {1,1,1}, {2,2,2}};
     // El siguiente ejemplo imprime por pantalla el contenido de una matriz:
-    for (int fila= 0; fila<matriz.length; fila++){
-    for (int col=0; col<matriz[fila].length; col++){
-        System.out.println(fila +":" + col + ":" + matriz[fila][col]);
+    for (int hoya = 0; hoya <matriz.length; hoya+){
+    for (int col=0; col<matriz[hoya].length; col++){
+        System.out.println(hoya +":" + col + ":" + matriz[hoya][col]);
     }
 }
     //alternativamente
@@ -79,15 +92,7 @@ public class Teoria {
     //matriz[2][1] = 0;
     //matriz[2][2] = 0;
     
-    //código que rellenase el cubo con valores aleatorios, podría ser el
-//siguiente
- int [][][][] cubo = new int [4][4][4][4];
- for (int x = 0; x<cubo.length; x++){
-    for (int y = 0; y<cubo[x].length; y++){
-        for (int z=0; z<cubo[x][y].length; z++){}
-          //  cubo[x][y][z] = (int)(Math.random()* 6);
-    }
-}
+
  
   
 }

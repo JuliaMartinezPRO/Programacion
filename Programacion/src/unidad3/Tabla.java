@@ -23,14 +23,7 @@ imprimeTablaMultiplicar (valor);
 private static boolean múltiploTres(int valor){
 return valor % 3 == 0;
 }
-public static void main(String[] args){
-for (int valor = 1; valor <= 100; valor++){
-    imprimeTablaMultiplicar(valor);
-if (múltiploTres(valor)){
-    System.out.println(valor +"es múltiplo de tres.");
-}
-}
-}
+
 
 
 }

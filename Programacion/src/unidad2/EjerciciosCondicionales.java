@@ -101,7 +101,8 @@ public class EjerciciosCondicionales {
 
         //EJERCICIO 4 BOLETIN 2
         //Definir nombres
-        double productos, precio, descuento;
+        double descuento;
+       
         //Creamos un objeto Scanner
         Scanner syc = new Scanner(System.in);
         //Pedimos al usuario que ingrese precio
@@ -109,22 +110,22 @@ public class EjerciciosCondicionales {
         double ptrecio = syc.nextDouble();
         //pedimos al usuario que ingrese los productos sellecionados
         System.out.print("Ingrese el nº de productos seleccionados");
-        int prtoductos = syc.nextInt();
-        if (prtoductos == 100) {
+        double productos = syc.nextDouble();
+        if (productos> 100) {
             System.out.println("Usted tendrá un descuento del 40%");
             descuento = ptrecio * 40 / 100;
             System.out.println("el total de su compra con descuento incluido es:" + descuento );
-        } else if(prtoductos = 25 && 100) 
+        } else if(productos > 25 || productos< 100) {
             System.out.println("ustede tendrá un descuento del 20%");
             descuento = ptrecio * 20 / 100;
             System.out.println("el total de su compra con descuento es:" + descuento);
-        } else if (prtoductos = 10 && 24) {
+        } else if (productos > 10 || productos < 24) {
             System.out.println("usted tendrá un descuento del 10%");
             descuento = ptrecio* 10 / 100;
             System.out.println("el total de su compra con descuento es:" + descuento);
-        } else if (prtoductos < 10) {
+        } else if (productos < 10) {
             System.out.println("usten no tendra descuento");
-            System.out.println("el total de su cuenta sin descuento es:" + precio);
+            System.out.println("el total de su cuenta sin descuento es:" + ptrecio);
         }
 
         //EJERCICIO 5 BOLETIN 2
@@ -170,17 +171,6 @@ public class EjerciciosCondicionales {
             System.out.println("El total de su salario neto es:" + saldoNeto);
         }
 
-        //EJERCICIO 6
-        //definir h como entero
-        int h;
-        //Definir hora,h2,m2,mensaje como caracter
-        int hora, h2, m2, mensaje;
-        //creamos un objeto scanner para ingresar la hora 
-        Scanner scs = new Scanner(System.in);
-        //Pedimos al usuario que ingrese la hora
-        System.out.println("Ingrese una hora");
-        //int hora = scs.nextInt();
-        // int a = 9;
-
+      
     }
 }
