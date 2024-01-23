@@ -64,6 +64,7 @@ public class Teoria {
      * @param columna
      * @return
      */
+    }
     private int sumaCol(int[][] matriz, int columna){
         int suma = 0;
         for (int fila = 0; fila < matriz.length; fila++) {
@@ -95,5 +96,5 @@ public class Teoria {
 
  
   
-}
+
 }
