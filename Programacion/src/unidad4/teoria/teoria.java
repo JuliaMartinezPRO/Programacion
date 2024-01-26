@@ -6,8 +6,6 @@
 package unidad4.teoria;
 
 import java.util.Scanner;
-import unidad4.teoria.EjercicioNutriscore;
-import java.lang.NoClassDefFoundError;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Stack;
