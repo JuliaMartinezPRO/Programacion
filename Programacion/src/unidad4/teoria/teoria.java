@@ -9,6 +9,8 @@ import java.util.Scanner;
 import unidad4.teoria.EjercicioNutriscore;
 import java.lang.NoClassDefFoundError;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Stack;
 
 /**
  *
@@ -83,9 +85,9 @@ public class Teoria {
 
         int[][] matriza = {{0, 0, 0}, {1, 1, 1}, {2, 2, 2}};
         // El siguiente ejemplo imprime por pantalla el contenido de una matriz:
-        for (int hoya = 0; hoya < matriz.length; hoya++) {
-            for (int col = 0; col < matriz[hoya].length; col++) {
-                System.out.println(hoya + ":" + col + ":" + matriz[hoya][col]);
+        for (int hoya = 0; hoya < matriza.length; hoya++) {
+            for (int col = 0; col < matriza[hoya].length; col++) {
+                System.out.println(hoya + ":" + col + ":" + matriza[hoya][col]);
 
             }
         }
@@ -101,7 +103,56 @@ public class Teoria {
         //matriz[2][2] = 0;
 
         //ARRAYLISTS
+        //diapositiva 80 unidad4
         ArrayList v = new ArrayList();
+        System.err.println("Nº de elementos "+ String.valueOf(v));
+        for(int i = 0;i<15;i++){
+        v.add(i+1);
+        }
+        for (Object v1 : v) {
+            int j = 0;
+            System.out.println("valor"+ v.get(j));
+            System.out.println("nº de elementos"+ v.size());
+        
+        return 0;
+        }
+        //diapositiva 86 unidad4
+        
+        LinkedList<String> pila= new LinkedList<>();
+        pila.push("primero");
+        pila.push("segundo");
+        pila.push("tercero");
+        pila.push("cuarto");
+        pila.push("quinto");
+        
+        System.out.println("la pila tiene");
+        System.out.println(pila.size()+"elementos");
+        System.out.println("el primero en salir es :");
+        System.out.println(pila.peek());
+        
+        while (!pila.isEmpty()) {
+            System.out.println("eliminando elemento"+pila.pop());
+       
+        return 0;
+        }
+        
+        //diapositiva 88 unidad4
+        Stack<String> pila2 = new Stack<>();
+        
+        pila2.push("primero");
+        pila2.push("segundo");
+        pila2.push("tercero");
+        pila2.push("cuarto");
+        pila2.push("quinto");
+        
+        System.out.print("La pila tiene ");
+        System.out.println(pila.size()+ " elementos");
+        System.out.print("El primero en salir es: ");
+        System.out.println(pila.peek());
+        
+        while(!pila2.isEmpty()){
+            System.out.println("eliminando elemento"+ pila2.pop());
+        }
         return 0;
     }
 
