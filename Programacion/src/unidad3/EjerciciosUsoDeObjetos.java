@@ -229,6 +229,23 @@ public class EjerciciosUsoDeObjetos {
         //llamada recursiva multiplicando x por x elevado a 1 (n-1)
         return x * calcularPotencia(x, n - 1);
     }
-
+    
+    //EJERCICIO 9
+    public static double calcularBinario(int b,int o,int h){
+        Scanner cd = new Scanner(System.in);
+        System.out.println("opciones"
+                + "Tranformar a binario"
+                + "transformar a octal"
+                + "transformar a hexadecimal"
+                + "fin del proceso");
+        System.out.println("teclee una opcion");
+        System.out.println("ingrese un numero");
+        int num = cd.nextInt();
+        System.out.println("octal"+Integer.toOctalString(num));
+        System.out.println("binario"+Integer.toBinaryString(num));
+        System.out.println("hexadecimal"+Integer.toHexString(num));
+        return 0;
+    }
+    
 }
 
