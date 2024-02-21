@@ -5,8 +5,8 @@
  */
 package unidad3.repaso;
 
-import java.time.LocalDate;
-import java.time.LocalDate;
+import java.time.*;
+import java.time.format.*;
 import static java.time.temporal.TemporalQueries.localDate;
 
 /**
@@ -16,8 +16,18 @@ import static java.time.temporal.TemporalQueries.localDate;
 public class Estudiante {
     String nombre;
     int edad;
-    localDate fechaNac;
-    LocalDate fechaInC;
+    LocalDate fechaNac=LocalDate.now();
+    LocalDate fechaInC=LocalDate.now();
+    private Modulo.ModuloP modulo;
+    private boolean cursoAc;
+    private final String moduloP;
+    private Curso.CursoA curso;
+
+    private static class localDate {
+
+        public localDate() {
+        }
+    }
     interface Curso{
         enum CursoA implements Curso{
             PRIMERO, SEGUNDO
@@ -34,11 +44,11 @@ public class Estudiante {
         Estudiante pepe = new Estudiante("pepe", "code", "primero",20, 33418127,"2023-09-1","2004-01-17", "2004-01-17", "2004-01-17");
         pepe.nombre="pepe";
         pepe.edad = 20;
-        Modulo = Modulo.ModuloP.CODE;
+        pepe.modulo = Modulo.ModuloP.CODE;
         pepe.codNADN = 33418127;
-        pepe.cursoAc = "primero";
-        pepe.fechaInC = "2023-09-1";
-        pepe.fechaNac ="2004-01-17";
+        pepe.curso = Curso.CursoA.PRIMERO;
+        pepe.fechaInC = LocalDate.of(2023, Month.SEPTEMBER, 1);
+        pepe.fechaNac =LocalDate.of(2004, Month.JANUARY, 17);
         System.out.println(pepe.nombre + pepe.codNADN + pepe.edad + pepe.fechaInC + pepe.fechaNac + pepe.cursoAc);
 
         
@@ -46,22 +56,22 @@ public class Estudiante {
         Estudiante titi = new Estudiante("titi","segundo", "ingles", 22,343171717, "2023-09-1", "2002-01-19", "2004-01-17", "2004-01-17");
         titi.nombre="titi";
         titi.codNADN = 343171717;
-        titi.cursoAc = "segundo";
+        titi.curso = Curso.CursoA.SEGUNDO;
         titi.edad=22;
-        titi.fechaInC ="2023-09-1";
-        titi.moduloP = "ingles";
-        titi.fechaNac ="2002-01-19";
+        titi.fechaInC = LocalDate.of(2023, Month.SEPTEMBER, 1);
+        titi.modulo = Modulo.ModuloP.INGLES;
+        titi.fechaNac =LocalDate.of(2002, Month.JANUARY, 19);
         System.out.println(titi.nombre + titi.codNADN + titi.edad + titi.fechaInC + titi.fechaNac + titi.cursoAc);
         
         
         Estudiante nano = new Estudiante("nano","segundo", "programacion", 33,323171717, "2023-09-1", "2001-01-17", "2004-01-17", "2004-01-17");
         nano.nombre="nano";
         nano.codNADN=323171717;
-        nano.cursoAc = "segundo";
+        nano.curso = Curso.CursoA.SEGUNDO;
         nano.edad=23;
-        nano.fechaInC="2023-09-1";
-        nano.fechaNac="2001-01-17";
-        nano.moduloP="programacion";
+        nano.fechaInC = LocalDate.of(2023, Month.SEPTEMBER, 1);
+        nano.fechaNac=LocalDate.of(2001, Month.JANUARY, 17);
+        nano.modulo=Modulo.ModuloP.PROGRAMACION;
          System.out.println(nano.nombre + nano.codNADN + nano.edad + nano.fechaInC + nano.fechaNac + nano.cursoAc);
     }
     //definir constructor
