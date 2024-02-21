@@ -18,15 +18,23 @@ public class Estudiante {
     int edad;
     localDate fechaNac;
     LocalDate fechaInC;
-    String cursoAc;
+    interface Curso{
+        enum CursoA implements Curso{
+            PRIMERO, SEGUNDO
+        }
+    }
     double codNADN;
-    enum moduloP;
+    interface Modulo{
+        enum ModuloP implements Modulo{
+            PROGRAMACION, CODE, INGLES
+        }
+    }
 
     public static void main(String[] args) {
         Estudiante pepe = new Estudiante("pepe", "code", "primero",20, 33418127,"2023-09-1","2004-01-17", "2004-01-17", "2004-01-17");
         pepe.nombre="pepe";
         pepe.edad = 20;
-        pepe.moduloP = "code";
+        Modulo = Modulo.ModuloP.CODE;
         pepe.codNADN = 33418127;
         pepe.cursoAc = "primero";
         pepe.fechaInC = "2023-09-1";
