@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author marfonjul
  */
-public class boletin4 {
+public class Boletin4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.err.println("ingrese un tamaño de vetor");
