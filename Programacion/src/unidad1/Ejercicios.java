@@ -120,6 +120,6 @@ public class Ejercicios {
         } else {
             System.out.println("tercer intervalo");
         }
-
+Math.p
     }
 }
