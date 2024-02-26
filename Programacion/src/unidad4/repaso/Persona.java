@@ -81,7 +81,7 @@ public class Persona {
         System.out.println(kenia.getColor());
         System.out.println(kenia.getCoche());
 
-        Persona alfonso = new Persona("alfonso", "Rojo", "SEAT", "HP", "HAWEI");
+        Persona alfonso = new Persona("alfonso", color.Rojo, coche.SEAT,ordenador.HP, movil.HAWEI);
         alfonso.setNombre("alfonso");
         alfonso.setOrdenador(MarcasO.HP);
         alfonso.setColor(Color.Rojo);
