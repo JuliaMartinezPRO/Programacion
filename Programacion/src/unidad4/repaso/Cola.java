@@ -19,17 +19,17 @@ public class Cola {
         cola.add("juan");
         cola.add("ana");
         cola.add("luis");
-        System.err.println(cola.size());
+        System.out.println(cola.size());
         System.out.print(cola.peek());
-        System.err.println(cola.poll());
-        System.err.println(cola.peek());
+        System.out.println(cola.poll());
+        System.out.println(cola.peek());
         PriorityQueue<Persona> colas = new PriorityQueue<>();
         colas.add("juan");
         colas.add("ana");
         colas.add("luis");
-        System.err.println(colas.size());
+        System.out.println(colas.size());
         System.out.print(colas.peek());
-        System.err.println(colas.poll());
-        System.err.println(colas.peek());
+        System.out.println(colas.poll());
+        System.out.println(colas.peek());
     }
 }
