@@ -22,7 +22,7 @@ public class Mapas {
         //comprueba si puede contener nulos en las claves o en los valores 
         //que ocurre si dos alumnos se llaman exactamente igual ? explicalo
         HashMap <Persona, Integer> map = new HashMap<>();
-        Pers
+        
         
         
         
