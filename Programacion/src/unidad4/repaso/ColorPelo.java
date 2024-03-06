@@ -9,6 +9,6 @@ package unidad4.repaso;
  *
  * @author marfonjul
  */
-public class Bd {
-    
+public enum ColorPelo {
+    Negro , Castaño , Verde
 }

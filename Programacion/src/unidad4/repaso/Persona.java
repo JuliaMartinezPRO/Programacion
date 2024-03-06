@@ -9,14 +9,28 @@ import unidad4.repaso.MarcasO;
 import unidad4.repaso.MarcasM;
 import unidad4.repaso.MarcasC;
 import unidad4.repaso.Color;
+import unidad4.repaso.ColorPelo;
 
 /**
  *
  * @author marfonjul
  */
-public class Persona {
+public class Persona implements compareTo{
 
-    public Persona(String kenia, Color rojo, MarcasO dacia, MarcasM dell, MarcasC hawei) {
+    static void Shift() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    //Constructor
+    public Persona(String nombre, MarcasO ordenador, MarcasM movil, MarcasC coche, Color color, ColorPelo colorPelo) {
+        this.nombre = nombre;
+        this.ordenador = ordenador;
+        this.movil = movil;
+        this.coche = coche;
+        this.color = color;
+        this.colorPelo = colorPelo;
+    }
+
+    public Persona(String kenia, Color rojo, MarcasC hawei, MarcasO dacia, MarcasM dell, ColorPelo Negro) {
     }
 
     String nombre;
@@ -24,6 +38,26 @@ public class Persona {
     MarcasM movil;
     MarcasC coche;
     Color color;
+    ColorPelo colorPelo;
+//otros constructores
+    
+    public Persona(String nombre, ColorPelo colorPelo) {
+        this.nombre = nombre;
+        this.colorPelo = colorPelo;
+    }
+
+    Persona() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public ColorPelo getColorPelo() {
+        return colorPelo;
+    }
+
+    public void setColorPelo(ColorPelo colorP) {
+        this.colorPelo = colorP;
+    }
+    
 
     public String getNombre() {
         return nombre;
@@ -64,36 +98,8 @@ public class Persona {
     public void setColor(Color color) {
         this.color = color;
     }
-
-  
-    public static void main(String[] args) {
-
-        Persona kenia = new Persona("kenia",color.Rojo,ordenador.DELL,movil.HAWEI,coche.DACIA);
-        kenia.setNombre("kenia");
-        kenia.setColor(Color.Rojo);
-        kenia.setCoche(MarcasC.DACIA);
-        kenia.setOrdenador(MarcasO.DELL);
-        kenia.setMovil(MarcasM.HAWEI);
-
-        System.out.println(kenia.getNombre());
-        System.out.println(kenia.getOrdenador());
-        System.out.println(kenia.getMovil());
-        System.out.println(kenia.getColor());
-        System.out.println(kenia.getCoche());
-
-        Persona alfonso = new Persona("alfonso", color.Rojo, coche.SEAT,ordenador.HP, movil.HAWEI);
-        alfonso.setNombre("alfonso");
-        alfonso.setOrdenador(MarcasO.HP);
-        alfonso.setColor(Color.Rojo);
-        alfonso.setCoche(MarcasC.SEAT);
-        alfonso.setMovil(MarcasM.HAWEI);
-
-        System.out.println(alfonso.getNombre());
-        System.out.println(alfonso.getOrdenador());
-        System.out.println(alfonso.getMovil());
-        System.out.println(alfonso.getColor());
-        System.out.println(alfonso.getCoche());
-
-    }
-
+public int compareTo(Persona otraPersona){
+    return this.nombre.compareTo(otraPersona,nombre);
 }
+}
+
